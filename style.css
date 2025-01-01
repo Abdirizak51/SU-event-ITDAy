@@ -4,6 +4,19 @@
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
 body {
     width: 100%;
 }
@@ -207,13 +220,14 @@ img {
     color: #666;
     margin-bottom: 20px;
 }
-
+ 
 #book1 .book-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Kala dheereeya buugaagta */
+    padding-top: 20px;
 }
+
 
 #book1 .bok {
     width: 23%;
@@ -234,7 +248,8 @@ img {
 
 #book1 .bok img {
     width: 100%;
-    height: auto;
+    height: 300px; /* Dherer joogto ah oo buug kasta */
+    object-fit: cover; /* Si ay sawirradu u muuqdaan kuwo siman */
     border-radius: 15px;
     margin-bottom: 15px;
 }
@@ -278,4 +293,38 @@ img {
 
 #book1 .bok a:hover {
     color: #055d50;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./book2/light.jfif);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: blue;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+#banner h2{
+    color: blueviolet;
+    font-size: 26px;
+    padding: 10px 0;
+
+}
+#banner h2 span { 
+    color:red;;
+
+     
+
+}
+#banner button:hover{
+    background-color: #088178;
+    color: #fff;
 }
