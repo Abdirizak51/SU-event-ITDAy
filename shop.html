@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirqab Book Store</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./icons/logo.png" class="logo" alt="Hirqab Book Store Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a   href="index.html">Home</a></li>
+                <li><a class="active"href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="search-filter" class="section-p1">
+        <h2>Search and Filter Books</h2>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for books...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="filter-options">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="somali">Somali Books</option>
+                <option value="arabic">Arabic Books</option>
+                <option value="english">English Books</option>
+            </select>
+            <select id="price-filter">
+                <option value="all">All Prices</option>
+                <option value="low">Below $20</option>
+                <option value="medium">$20 - $25</option>
+                <option value="high">Above $25</option>
+            </select>
+            <button id="filter-btn">Filter</button>
+        </div>
+    </section>
+    
+    
+    
+            <section id="book1" class="section-p1">
+                <h2>Feature Books</h2>
+                <p>Buugaag cusub oo kuu raali gelin doona</p>
+                <div class="book-container" onclick="window.location.href='s-book.html'">
+                    <div class="bok">
+                        <img src="./book2/aanadi nageeye.jpg" alt="Buuga Aanadi Nageeye">
+                        <div class="description">
+                            <span>Ibraahim Yuusuf Howd</span>
+                            <h5>Buuga Aanadi Nageeye</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$20</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="7habits.html" class="btn-view-details">View Details</a>
+                    </div>
+                    
+                    <div class="bok"> 
+                           
+                        <img src="./book2/7hapits.jpg" alt="The 7 Habits of Highly Effective People">
+                        <div class="description">
+                            <span>Book by Stephen R. Covey</span>
+                            <h5>The 7 Habits of Highly Effective People</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$20</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="7habits.html" class="btn-view-details">click</a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/dhambaalada quraanka.jpg" alt="dhambaalada quraanka">
+                        <div class="description">
+                            <span>turjume: Cabdulxakiim Muxammad Obsiiye</span>
+                            <h5>dhambaalada quraanka</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$16</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/maana fay.jpg" alt="Maana-faay">
+                        <div class="description">
+                            <span>Maxamed Daahir Afrax</span>
+                            <h5>Maana-faay</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$22</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/atomic hapits.jpg" alt="atomic hapits book">
+                        <div class="description">
+                            <span>book  by James Clear</span>
+                            <h5>atomic hapits</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$25</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                     
+                    <div class="bok">
+                        <img src="./book2/foolaad.jpg" alt="foolaad">
+                        <div class="description">
+                            <span>Cabdikariim Xikmaawi</span>
+                            <h5>foolaad{M. Mooge}</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$20</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <div class="book-container" onclick="window.location.href=''"></div>
+                        <img src="./book2/Think and Grow Rich.jpg" alt="THINK and GROW RICH">
+                        <div class="description">
+                            <span>NAPOLEON HILL</span>
+                            <h5>THINK and GROW RICH</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$20</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/dhoodaan.jpg" alt="DHOODAAN">
+                        <div class="description">
+                            <span>Ibraahim Yuusuf Howd</span>
+                            <h5>DHOODAAN Murug iyo Masa</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$25</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+
+                </div>
+            
+                <div class="book-container">
+                    <div class="bok">
+                        <img src="./book2/The Power of Now.jpeg" alt="The Power of Now">
+                        <div class="description">
+                            <span>Ekhart-Tole</span>
+                            <h5>The Power of Now</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$20</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/salaad baa idhaaftay.jpg" alt="salaad baa idhaaftay">
+                        <div class="description">
+                            <span>Book by Stephen R. Covey</span>
+                            <h5>TURJUME ;Abdihakiin Obsiiye</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$20</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/Man's Search for Meaning.jpg" alt="Man's Search for Meaning">
+                        <div class="description">
+                            <span>Victor r.frangel</span>
+                            <h5>Man's Search for Meaning</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$16</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/qawaaniinta suuqa sarifka lacagaha qalaad.jpg" alt="qawaaniinta suuqa sarifka lacagaha qalaad.jpg">
+                        <div class="description">
+                            <span>Moalimuu</span>
+                            <h5>qawaaniinta suuqa sarifka lacagaha qalaad.jpg</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$22</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/NUUN.jpg" alt="NUUN.jpg">
+                        <div class="description">
+                            <span>Muxamed Yuusuf</span>
+                            <h5>NUUN</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$25</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                     
+                    <div class="bok">
+                        <img src="./book2/halgankii juxo.jpg" alt="halgankii juxo.jpg">
+                        <div class="description">
+                            <span>Hussein M.Nuur</span>
+                            <h5>halgankii juxo</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$22</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/ismalurr.jpg" alt="ismalure">
+                        <div class="description">
+                            <span>ismalure</span>
+                            <h5>Turjume:Aadan sahan </h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$10</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="bok">
+                        <img src="./book2/aaya reeb.jpg" alt="aaya reeb">
+                        <div class="description">
+                            <span>Ibraahim Ahmed Ali</span>
+                            <h5>aaya reeb (2)</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$15</h4>
+                        </div>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+
+                </div> 
+                    <div class="book-container">
+                        <div class="bok">
+                            <img src="./book2/foolaad.jpg" alt="foolaad">
+                            <div class="description">
+                                <span>Cabdikariim Xikmaawi</span>
+                                <h5>foolaad{M. Mooge}</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <h4>$18</h4>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <div class="bok">
+                            <img src="./book2/7hapits.jpg" alt="The 7 Habits of Highly Effective People">
+                        <div class="description">
+                            <span>Book by Stephen R. Covey</span>
+                            <h5>The 7 Habits of Highly Effective People</h5>
+                                <h5>Think Like a Monk</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$15</h4>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <div class="bok">
+                            <img src="./book2/aanadi nageeye.jpg" alt="aanadi nageeye">
+                            <div class="description">
+                                <span>Ibraahim Yuusuf Howd</span>
+                                 <h5>Buuga Aanadi Nageeye</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <h4>$12</h4>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <div class="bok">
+                            <img src="./book2/Rich Dad Poor Dad.jpeg" alt="Rich Dad Poor Dad">
+                            <div class="description">
+                                <span>Robert T. Kiyosaki</span>
+                                <h5>Rich Dad Poor Dad</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$14</h4>
+                            </div>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                 
+                </section>
+
+                <footer class="footer">
+                    <div class="container">
+                        
+                        <div class="footer-section logo-contact">
+                            <h2 class="footer-logo">MyBookStore</h2>
+                            <p>Address: KM4 Hodan, Mogadisho, soomalia</p>
+                            <p>Phone: +252 611111111</p>
+                            <p>Email: info@mybookstore.com</p>
+                        </div>
+                
+                     
+                        <div class="footer-section follow-us">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook"></a>
+                                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                            </div>
+                        </div>
+                
+                       
+                        <div class="footer-section my-account">
+                            <h3>My Account</h3>
+                            <ul>
+                                <li><a href="sing-in.html" class="signin-link">Sign In</a></li>
+                                <li><a href="cart.html">View Cart</a></li>
+                                <li><a href="#">Track My Order</a></li>
+                                <li><a href="faq.html">Help</a></li>
+                            </ul>
+                        </div>
+                
+                        <!-- About -->
+                        <div class="footer-section about">
+                            <h3>About</h3>
+                            <p>Learn more about our mission to provide quality books to readers worldwide.</p>
+                        </div>
+                
+                        <!-- Install App -->
+                        <div class="footer-section install-app">
+                            <h3>Install App</h3>
+                            <div class="app-links">
+                                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="Google Play"></a>
+                                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Badge_Apple.svg/512px-Badge_Apple.svg.png" alt="App Store"></a>
+                            </div>
+                        </div>
+                
+                        <!-- Payment Gateways -->
+                        <div class="footer-section payment">
+                            <h3>Secured Payment Gateways</h3>
+                            <div class="payment-icons">
+                                <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa">
+                                <img src="https://cdn-icons-png.flaticon.com/512/217/217425.png" alt="Mastercard">
+                                <img src="https://cdn-icons-png.flaticon.com/512/888/888870.png" alt="PayPal">
+                                <img src="https://cdn-icons-png.flaticon.com/512/825/825515.png" alt="American Express">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-credit">© 2025 MyBookStore - All Rights Reserved</p>
+                </footer>
+               
+    <script src="script.js"></script>
+</body>
+</html>

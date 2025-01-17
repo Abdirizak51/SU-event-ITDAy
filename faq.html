@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirqab Book Store</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./icons/logo.png" class="logo" alt="Hirqab Book Store Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a   href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a   href="about.html">About</a></li>
+                <li><a   href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+   <!-- Header Banner Section -->
+<section class="header-banner">
+    <img src="./img/bookshelf-with-books-biography-adventure-novel-poem-fantasy-love-story-detective-art-romance-banner-for-library-book-store-genre-of-literature-illustration-in-flat-style-vector.jpg" alt="Books Banner">
+</section>
+
+<main>
+    <section class="faq">
+        <div class="faq-item">
+            <h3 onclick="toggleFaq(this)">Sideen u dalban karaa buug?</h3>
+            <p class="answer">Waxaad si fudud u dooran kartaa buugga aad rabto, kadibna guji "Ku dar Gaariga Iibka", oo raac tilmaamaha bixinta lacagta.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFaq(this)">Maxay yihiin hababka lacag bixinta ee la aqbalo?</h3>
+            <p class="answer">Waxaan aqbalnaa Visa, Mastercard, PayPal, iyo lacag bixinta Mobile-ka sida EVC iyo Zaad.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFaq(this)">Muddo intee le'eg ayay qaadanaysaa in buugga la soo gaarsiiyo?</h3>
+            <p class="answer">Muddo 3 ilaa 5 maalmood gudahood ah ayaa laguugu keenayaa, iyadoo kuxiran goobta aad ku sugan tahay.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFaq(this)">Ma bixin kartaa taageero haddii dhibaato dhacdo?</h3>
+            <p class="answer">Haa, waxaad nagala soo xiriiri kartaa email-ka: support@mybookstore.com, ama telefoon: +252 611111111.</p>
+        </div>
+    </section>
+</main>
+
+ 
+
+<footer class="footer">
+    <div class="container">
+        
+        <div class="footer-section logo-contact">
+            <h2 class="footer-logo">MyBookStore</h2>
+            <p>Address: KM4 Hodan, Mogadisho, soomalia</p>
+            <p>Phone: +252 611111111</p>
+            <p>Email: info@mybookstore.com</p>
+        </div>
+
+     
+        <div class="footer-section follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+       
+        <div class="footer-section my-account">
+            <h3>My Account</h3>
+            <ul>
+                <li><a href="sing-in.html" class="signin-link">Sign In</a></li>
+                <li><a href="cart.html">View Cart</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="faq.html">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- About -->
+        <div class="footer-section about">
+            <h3>About</h3>
+            <p>Learn more about our mission to provide quality books to readers worldwide.</p>
+        </div>
+<!-- Install App -->
+<div class="footer-section install-app">
+    <h3>Install App</h3>
+    <div class="app-links">
+        <a href="https://play.google.com/store" target="_blank" aria-label="Google Play Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="Google Play">
+        </a>
+        <a href="https://www.apple.com/app-store/" target="_blank" aria-label="Apple App Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Badge_Apple.svg/512px-Badge_Apple.svg.png" alt="App Store">
+        </a>
+    </div>
+</div>
+        <!-- Payment Gateways -->
+        <div class="footer-section payment">
+            <h3>Secured Payment Gateways</h3>
+            <div class="payment-icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa">
+                <img src="https://cdn-icons-png.flaticon.com/512/217/217425.png" alt="Mastercard">
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888870.png" alt="PayPal">
+                <img src="https://cdn-icons-png.flaticon.com/512/825/825515.png" alt="American Express">
+            </div>
+        </div>
+    </div>
+    <p class="footer-credit">© 2025 MyBookStore - All Rights Reserved</p>
+</footer>
+     
+<script>// faq.js
+    function toggleFaq(element) {
+        const answer = element.nextElementSibling;
+        const allAnswers = document.querySelectorAll('.faq-item .answer');
+    
+        // Ka xiro jawaabaha kale
+        allAnswers.forEach((ans) => {
+            if (ans !== answer) {
+                ans.style.display = 'none';
+            }
+        });
+    
+        // Furo ama xiro jawaabta hadda
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
